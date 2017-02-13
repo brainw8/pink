@@ -5,21 +5,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
   <title>pink Website</title>
 </head>
 
 <body>
   <header class="page-header">
+    <nav class="main-nav">
+      <div class="main-nav__nav-block">
+        <div class="main-nav__logo"></div>
+      </div>
+      <ul class="main-nav__items">
+        <li class="main-nav__item">Главная</li>
+        <li class="main-nav__item">Фотографии</li>
+        <li class="main-nav__item">Конкурс</li>
+        <li class="main-nav__item">HTML Academy</li>
+      </ul>
+    </nav>
     <div class="page-header__wrapper">
-      <nav class="main-nav">
-        <div class="page-header__logo"></div>
-        <ul class="page-header__items">
-          <li class="page-header__item">Главная</li>
-          <li class="page-header__item">Фотографии</li>
-          <li class="page-header__item">Конкурс</li>
-          <li class="page-header__item">HTML Academy</li>
-        </ul>
-      </nav>
       <section class="download-app">
         <b class="download-app__slogan">Взгляните на жизнь иначе!</b>
         <div class="download-app__download-btn"></div>
@@ -65,7 +68,62 @@
         </div>
       </div>
     </section>
+    <section class="price">
+      <div class="price__wrapper">
+        <table class="price__table">
+          <tr class="price__table-title-items">
+            <td class="price__table-title-item"></td>
+            <td class="price__table-title-item">
+              <h3>База</h3><span>1,99 USD</span></td>
+            <td class="price__table-title-item">
+              <h3>Стандарт</h3><span>3,99 USD</span></td>
+            <td class="price__table-title-item">
+              <h3>Анлим</h3><span>9,99 USD</span></td>
+          </tr>
+          <tr class="price__table-items">
+            <td class="price__item">Розовый фильтр</td>
+            <td class="price__item"></td>
+            <td class="price__item"></td>
+            <td class="price__item"></td>
+          </tr>
+          <tr class="price__table-items">
+            <td class="price__item">Смайлики</td>
+            <td class="price__item"></td>
+            <td class="price__item"></td>
+            <td class="price__item"></td>
+          </tr>
+          <tr class="price__table-items">
+            <td class="price__item">Комментарии</td>
+            <td class="price__item"></td>
+            <td class="price__item"></td>
+            <td class="price__item"></td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <section class="contacts">
+      <div class="contacts__wrapper">
+        <h1 class="contacts__title">Остались вопросы? <br> Свяжитесь с нами!</h1>
+        <div class="contacts__items">
+          <span class="contacts__item"><h3>Звоните:</h3>+7 (812) 555-66-66</span>
+          <span class="contacts__item">mail@htmlacademy.ru</span>
+          <span class="contacts__item">ул. Большая Конюшенная, 19/8</span>
+        </div>
+      </div>
+      <div class="contacts__map"></div>
+    </section>
   </main>
+  <footer class="page-footer">
+    <div class="page-footer__wraper">
+      <div class="page-footer__item"></div>
+      <div class="page-footer__item">
+        <span class="page-footer__social page-footer__social--tw"></span>
+        <span class="page-footer__social page-footer__social--fb"></span>
+        <span class="page-footer__social page-footer__social--youtb"></span>
+      </div>
+      <div class="page-footer__item">Разработано <img src="img/htmlacademy.svg" alt=""></div>
+    </div>
+  </footer>
 </body>
 
 </html>
