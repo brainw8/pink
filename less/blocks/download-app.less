@@ -1,11 +1,26 @@
 .download-app {
-  display: none;
+  // display: none;
+  // margin-top: 390px;
+  .container();
+  min-height: 270px;
+  padding-top: 390px;
 }
 
 @media @tablet-widths {
-  .download-app {
+  .download-app__wrapper {
+    // .container();
     display: block;
     width: 300px;
     min-height: 415px;
+    padding-left: 40px;
+  }
+  .download-app__slogan {
+    text-align: center;
+  }
+}
+
+@media @desktop-widths {
+  .download-app {
+    // padding-left: 130px
   }
 }
