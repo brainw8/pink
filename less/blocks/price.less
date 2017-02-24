@@ -7,12 +7,16 @@
 .price__table {
   display: block;
 }
+
 .price__table-title-items {
   display: block;
 }
+
 .price__table-title-item {
   display: block;
-  &--one, &--two, &--four {
+  &--one,
+  &--two,
+  &--four {
     display: none;
   }
   &--three {
@@ -22,10 +26,20 @@
 
 .price__table-item {
   display: block;
-  &--one, &--two, &--four {
+  &--one,
+  &--two,
+  &--four {
     display: none;
   }
   &--three {
     display: block;
+  }
+}
+
+@media @table-widths {
+  .price {
+  min-height: 320px;
+  padding-top: 35px;
+  padding-bottom: 0;
   }
 }
