@@ -727,31 +727,137 @@ body {
   padding-top: 55px;
   padding-bottom: 100px;
 }
+.price__wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .price__wrapper {
+    width: 620px;
+  }
+}
+@media (min-width: 1200px) {
+  .price__wrapper {
+    width: 940px;
+  }
+}
 .price__table {
   display: block;
 }
 .price__table-title-items {
   display: block;
 }
-.price__table-title-item {
-  display: block;
+@media (min-width: 768px) {
+  .price {
+    min-height: 320px;
+    padding-top: 35px;
+    padding-bottom: 0;
+  }
 }
-.price__table-title-item--one,
-.price__table-title-item--two,
-.price__table-title-item--four {
+.price__table {
+  display: table;
+}
+.price__table-title-items {
+  display: table-row;
+}
+@media (min-width: 1200px) {
+  .price {
+    min-height: 444px;
+    padding-top: 83px;
+  }
+}
+.contacts {
+  min-height: 612px;
+  padding-top: 42px;
+}
+.contacts__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .contacts__wrapper {
+    width: 620px;
+  }
+}
+@media (min-width: 1200px) {
+  .contacts__wrapper {
+    width: 940px;
+  }
+}
+@media (min-width: 768px) {
+  .contacts {
+    min-height: 779px;
+    padding-top: 53px;
+  }
+  .contacts::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .contacts__item {
+    width: 300px;
+    float: left;
+  }
+  .contacts__item:nth-child(3) {
+    margin-left: 150px;
+  }
+}
+@media (min-width: 1200px) {
+  .contacts {
+    min-height: 558px;
+    padding-top: 85px;
+  }
+  .contacts__item:nth-child(2) {
+    float: right;
+  }
+}
+.page-footer {
   display: none;
 }
-.price__table-title-item--three {
-  display: block;
+@media (min-width: 768px) {
+  .page-footer {
+    display: block;
+    min-height: 127px;
+  }
+  .page-footer__wrapper {
+    width: 320px;
+    margin: 0 auto;
+  }
+  .page-footer__wrapper::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .page-footer__logo {
+    width: 150px;
+    float: left;
+  }
+  .page-footer__socials {
+    width: 180px;
+    margin-left: 70px;
+    float: left;
+  }
+  .page-footer__copyright {
+    width: 150px;
+    float: right;
+  }
 }
-.price__table-item {
-  display: block;
+@media (min-width: 768px) and (min-width: 768px) {
+  .page-footer__wrapper {
+    width: 620px;
+  }
 }
-.price__table-item--one,
-.price__table-item--two,
-.price__table-item--four {
-  display: none;
+@media (min-width: 768px) and (min-width: 1200px) {
+  .page-footer__wrapper {
+    width: 940px;
+  }
 }
-.price__table-item--three {
-  display: block;
+@media (min-width: 1200px) {
+  .page-footer {
+    min-height: 197px;
+  }
+  .page-footer__socials {
+    margin-left: 225px;
+  }
 }

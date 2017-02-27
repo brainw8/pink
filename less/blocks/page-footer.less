@@ -1,0 +1,36 @@
+.page-footer {
+  display: none;
+}
+
+@media @tablet-widths {
+  .page-footer {
+    display: block;
+    min-height: 127px;
+  }
+  .page-footer__wrapper {
+    .container();
+    .clearfix();
+  }
+  .page-footer__logo {
+    width: 150px;
+    float: left;
+  }
+  .page-footer__socials {
+    width: 180px;
+    margin-left: 70px;
+    float: left;
+  }
+  .page-footer__copyright {
+    width: 150px;
+    float: right;
+  }
+}
+
+@media @desktop-widths {
+  .page-footer {
+    min-height: 197px;
+  }
+  .page-footer__socials {
+    margin-left: 225px;
+  }
+}
