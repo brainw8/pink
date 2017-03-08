@@ -474,11 +474,6 @@ body {
     text-align: center;
   }
 }
-.main-nav {
-  min-height: 70px;
-  background-color: #1D2631;
-  position: relative;
-}
 .main-nav__wrapper {
   width: 320px;
   margin: 0 auto;
@@ -495,6 +490,7 @@ body {
 }
 .main-nav__nav-block {
   min-height: 70px;
+  background-color: #1D2631;
 }
 .main-nav__logo {
   width: 82px;
