@@ -12,18 +12,19 @@
 <body>
   <header class="page-header">
     <nav class="main-nav">
-      <ul class="main-nav__items">
-        <div class="main-nav__wrapper">
-          <div class="main-nav__nav-block">
-            <div class="main-nav__logo">PINK</div>
-            <div class="main-nav__burger">===</div>
-          </div>
-          <li class="main-nav__item">Главная</li>
-          <li class="main-nav__item">Фотографии</li>
-          <li class="main-nav__item">Конкурс</li>
-          <li class="main-nav__item">HTML Academy</li>
+      <div class="main-nav__wrapper">
+        <div class="main-nav__nav-block main-nav__nav-block--opn-menu">
+          <div class="main-nav__logo"><img src="img/logo-pink-white-mobile.svg" alt=""></div>
+          <a class="main-nav__burger" href="#"></a>
+          <a class="main-nav__close" href="#"></a>
         </div>
-      </ul>
+        <ul class="main-nav__items">
+          <li class="main-nav__item"><a href="#">Главная</a></li>
+          <li class="main-nav__item"><a href="#">Фотографии</a></li>
+          <li class="main-nav__item"><a href="#">Конкурс</a></li>
+          <li class="main-nav__item"><a href="#">HTML Academy</a></li>
+        </ul>
+      </div>
     </nav>
 
     <section class="download-app">
@@ -137,5 +138,6 @@
     </div>
   </footer>
 </body>
+<script src="js/script.js"></script>
 
 </html>

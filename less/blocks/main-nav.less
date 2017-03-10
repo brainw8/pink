@@ -4,6 +4,15 @@
   // position: relative;
 
   // margin: 0 auto;
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 32px;
+  text-transform: uppercase;
+}
+nav a {
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
 }
 .main-nav__wrapper {
   .container();
@@ -11,39 +20,109 @@
 }
 .main-nav__nav-block {
   // .clearfix();
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   min-height: 70px;
-  background-color: #1D2631;
+  background-color: rgba(29, 38, 49, 0.3);
+  width: 100%;
+  // // &--opn-menu {
+  // //   background-color: #283645;
+  // }
 }
 .main-nav__logo {
-  width: 82px;
-  float: left;
-  min-height: 70px;
+  width: 74px;
+  // float: left;
+  height: 22px;
   color: #FFF;
   padding-left: 20px;
 }
+
 .main-nav__burger {
+  display: block;
+  color: inherit;
+  position: relative;
   width: 50px;
-  float: right;
+  height: 5px;
+  // float: right;
+  background-color: #FFF;
+  margin-right: 20px;
+  box-shadow: 0 10px 0 0 #FFFFFF, 0 -10px 0 0 #FFFFFF;
+  z-index: 1;
+
+}
+
+.main-nav__close {
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 25px;
+  // float: right;
     color: #FFF;
     padding-right: 20px;
+    z-index: 2;
+    &--view {
+      display: block;
+    }
 }
+
+.main-nav__close::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 5px;
+  background-color: #FFF;
+  transform: rotate(45deg);
+}
+
+.main-nav__close::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 5px;
+  background-color: #FFF;
+  transform: rotate(-45deg);
+}
+
+
 .main-nav__items {
+  display: none;
   // width: 100%;
+  // display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  // align-items: ;
+  // min-height: 70px;
   margin: 0;
   padding: 0;
   list-style: none;
-  background-color: rgba(228, 168, 192, 0.5);
-  min-height: 325px;
+  // background-color: rgba(228, 168, 192, 0.5);
+  // min-height: 325px;
   width: 320px;
   // margin: 0 auto;
-  position: absolute;
-  top: 70px;
+  // position: absolute;
+  // top: 70px;
+  &--view {
+    display: flex;
+  }
 }
 
 .main-nav__item {
+
   text-align: center;
-  min-height: 62px;
+  min-height: 64px;
+  border-top: 1px solid #495562;
+  border-bottom: 1px solid #000101;
+  background-color: #283645;
+  width: 100%;
+  padding-top: 16px;
+  box-sizing: border-box;
+  // box-shadow: 0px 1px 5px 1px rgba(255,255,255,0.83);
 }
+
+
 
 @media @tablet-widths {
   .main-nav__nav-block {
