@@ -1,5 +1,6 @@
 var link = document.querySelector(".main-nav__burger");
 var menu = document.querySelector(".main-nav__items");
+var close = document.querySelector(".main-nav__close");
 // var close = document.querySelector(".main-nav__close");
 
 
@@ -7,14 +8,16 @@ var menu = document.querySelector(".main-nav__items");
       event.preventDefault();
       console.log("клик по ссылке");
       menu.classList.add("main-nav__items--view");
-      // link.classList.add("main-nav__burger--hidden");
-      link.classList.add("main-nav__close--view");
-      // if (storage) {
-      //   login.value = storage;
-      //   password.focus();
-      // } else {
-      //   login.focus();
-      // }
+      link.classList.add("main-nav__burger--hidden");
+      close.classList.add("main-nav__close--view");
+    });
+
+    close.addEventListener("click", function(event) {
+      event.preventDefault();
+      console.log("клик по ссылке");
+      menu.classList.remove("main-nav__items--view");
+      link.classList.remove("main-nav__burger--hidden");
+      close.classList.remove("main-nav__close--view");
     });
 
     // form.addEventListener("submit", function(event) {

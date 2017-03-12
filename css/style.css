@@ -432,7 +432,6 @@ body {
 }
 .page-header {
   width: 320px;
-  min-height: 460px;
   margin: 0 auto;
   background: #1d2631 url(../img/bg-back-mobile@1x.jpg) no-repeat center top;
 }
@@ -451,20 +450,49 @@ body {
   }
 }
 .download-app {
-  width: 320px;
-  margin: 0 auto;
-  min-height: 270px;
   padding-top: 390px;
+  background: transparent url(../img/iphone-hand-mobile@1x.png) no-repeat 0px 107px;
 }
-@media (min-width: 768px) {
-  .download-app {
-    width: 620px;
-  }
+.download-app__wrapper {
+  padding: 0 20px;
 }
-@media (min-width: 1200px) {
-  .download-app {
-    width: 940px;
-  }
+.download-app__slogan {
+  display: none;
+}
+.download-app__download-btn {
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 18px;
+  padding: 16px 0;
+  text-align: center;
+  border: 3px solid #FFFFFF;
+  border-radius: 50px;
+  margin-top: 30px;
+}
+.download-app p {
+  margin: 0;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 22px 10px;
+  padding-bottom: 27px;
+}
+.download-app__mobile-os {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-top: 35px;
+  padding: 0 20px;
+}
+.download-app__mobile-os img {
+  display: block;
+  width: 44px;
+  height: auto;
 }
 @media (min-width: 768px) {
   .download-app__wrapper {
@@ -481,6 +509,7 @@ body {
   color: #FFFFFF;
   font-size: 18px;
   line-height: 32px;
+  font-weight: 600;
   text-transform: uppercase;
 }
 nav a {
@@ -530,13 +559,17 @@ nav a {
   box-shadow: 0 10px 0 0 #FFFFFF, 0 -10px 0 0 #FFFFFF;
   z-index: 1;
 }
+.main-nav__burger--hidden {
+  display: none;
+}
 .main-nav__close {
   position: relative;
-  display: block;
-  width: 50px;
-  height: 25px;
+  display: none;
+  width: 24px;
+  height: 23px;
   color: #FFF;
   padding-right: 20px;
+  padding-top: 16px;
   z-index: 2;
 }
 .main-nav__close--view {
